@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/My-Portfolio-Website/", // This will be dynamically updated by GitHub Actions
+  base: "/portfolio/", // This will be dynamically updated by GitHub Actions
 });
