@@ -4,12 +4,13 @@ import {
   About,
   Education,
   Skills,
-  Services,
   Projects,
   Contact,
   Certificates,
+  Gallery,
 } from "./pages/pages.js";
 import { navElements } from "./assets/assets.js";
+// Removed duplicate import of Gallery
 
 const App = () => {
   const [activeElem, setActiveElem] = useState(navElements[0]);
@@ -23,7 +24,7 @@ const App = () => {
         <Skills />
         <Certificates />
         <Projects />
-        {/* <Services /> */}
+        <Gallery/>
         <Contact />
       </div>
       <Footer activeElem={activeElem} setActiveElem={setActiveElem} />

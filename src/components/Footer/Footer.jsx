@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { imgLogo, textLogo, footerIcons, navElements } from "../../assets/assets.js";
 
-const Footer = ({ activeElem, setActiveElem }) => {
+const Footer = ({ setActiveElem }) => {
   return (
     <div className="bg-mainColor flex bedar-sm:items-center justify-between flex-col-reverse bedar-sm:flex-row gap-1 bedar-sm:gap-0 px-5 bedar-sc1:px-20 py-5 mt-10">
       <div>
@@ -26,6 +27,9 @@ const Footer = ({ activeElem, setActiveElem }) => {
       </div>
     </div>
   );
+};
+Footer.propTypes = {
+  setActiveElem: PropTypes.func.isRequired,
 };
 
 export default Footer;

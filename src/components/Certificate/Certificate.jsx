@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { IoEyeSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -36,6 +37,14 @@ const Certificate = ({ isFlexShrink, img, title, description, issuedBy, credenti
       </div>
     </div>
   );
+};
+Certificate.propTypes = {
+  isFlexShrink: PropTypes.bool,
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  issuedBy: PropTypes.string.isRequired,
+  credentialURL: PropTypes.string.isRequired,
 };
 
 export default Certificate;
